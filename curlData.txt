@@ -15,4 +15,8 @@ echo '{ "Version": "2012-10-17", "Statement": [ { "Effect": "Allow", "Action": [
 
 /System/Volumes/Data/private/tmp/aws-auth-patch.yml
 
- ebd68aba215ffae5f32c851bb22dbbff81efb6f3
+ebd68aba215ffae5f32c851bb22dbbff81efb6f3
+
+aws ssm put-parameter --name PIMPMASTERGUAPO --value "PimpMasterGuapo" --type SecureString
+
+aws ssm delete-parameter --name JWT_SECRET
