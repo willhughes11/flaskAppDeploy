@@ -1,0 +1,2 @@
+JWT_SECRET='pimpmasterguapo'
+LOG_LEVEL=DEBUG
