@@ -37,6 +37,8 @@ phases:
       - kubectl apply -f simple_jwt_api.yml 
       - printf '[{"name":"simple_jwt_api","imageUri":"%s"}]' $REPOSITORY_URI:$TAG > build.json
       - docker container ls
+      - docker run jwt-api-test
+
 artifacts:
   files: build.json
 
